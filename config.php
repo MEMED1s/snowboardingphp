@@ -11,7 +11,8 @@
 									
 							}else if(preg_match("/\w+@emsi.ma{1}$/",$emailvalue)==0){
 									$emptyemail = "email do not match";
-							}else{
+							}
+							else{
 								session_start();
 								$_SESSION["emailuser"] = $emailvalue;
 								$_SESSION["passuser"] = $passvalue;

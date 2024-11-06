@@ -39,9 +39,9 @@ include("config.php") ?>
 							    <p id="login-form-remember">
 							      <label for="modlgn_remember"><a href="#">Forget Your Password ? </a></label>
 							   </p>
-							    <input type="submit" name="Submit" class="button" value="Login"><div class="clear"></div>
+							    <input  class="button" value="Login"><div class="clear"></div>
 							 </div>
-							 <div class="button1"  >
+							 <div class="button1"   >
 					   				<a href="register.php" style="color: #FFF; text-decoration:none; display: flex;" >Create an Account</a>
 					 				</div>
 							  

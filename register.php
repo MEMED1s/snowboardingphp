@@ -1,4 +1,6 @@
-<?php session_start() ?>
+<?php session_start();
+include("config.php");
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -9,7 +11,7 @@
      <div class="main">
       <div class="shop_top">
 	     <div class="container">
-						<form> 
+						<form action = "" method = "post"> 
 								<div class="register-top-grid">
 										<h3>PERSONAL INFORMATION</h3>
 										<div>
@@ -22,8 +24,10 @@
 										</div>
 										<div>
 											<span>Email Address<label>*</label></span>
-											<input type="text"> 
+											<input type="text" name="emailname"> 
+											<span style = "color:red;  font-size: 15px;">  <?php echo $emptyemail ?></span>
 										</div>
+										
 										<div class="clear"> </div>
 											<a class="news-letter" href="#">
 												<label class="checkbox"><input type="checkbox" name="checkbox" checked=""><i> </i>Sign Up for Newsletter</label>
@@ -35,16 +39,21 @@
 										<h3>LOGIN INFORMATION</h3>
 										<div>
 											<span>Password<label>*</label></span>
-											<input type="text">
+											<input type="text" name="passname">
+											<span style = "color:red ; font-size: 15px;"> <?php echo $emptypass ?></span>
 										</div>
+									
 										<div>
 											<span>Confirm Password<label>*</label></span>
-											<input type="text">
+											<input type="text" name="passname">
+											<span style = "color:red ; font-size: 15px;"> <?php echo $emptypass ?></span>
 										</div>
+										
 										<div class="clear"> </div>
+										<div style="margin-left:61%"><button class="button1" type="Submit" name="Submit" style = "margin-left:-40%;color:white" >Register</button></div>
 								</div>
-								<div class="clear"> </div>
-								<input type="submit" value="submit">
+														
+									
 						</form>
 					</div>
 		   </div>
