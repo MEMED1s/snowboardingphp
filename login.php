@@ -39,9 +39,9 @@ include("config.php") ?>
 							    <p id="login-form-remember">
 							      <label for="modlgn_remember"><a href="#">Forget Your Password ? </a></label>
 							   </p>
-							    <input  class="button" value="Login"><div class="clear"></div>
+							    <input type="submit" name="login" class="button" value="Login"><div class="clear"></div>
 							 </div>
-							 <div class="button1"   >
+							 <div class="button1"  >
 					   				<a href="register.php" style="color: #FFF; text-decoration:none; display: flex;" >Create an Account</a>
 					 				</div>
 							  
@@ -108,9 +108,6 @@ include("config.php") ?>
 					</div>
 				</div>
 				<div class="row footer_bottom">
-				    <div class="copy">
-			           <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
-		            </div>
 					  <dl id="sample" class="dropdown">
 				        <dt><a href="#"><span>Change Region</span></a></dt>
 				        <dd>

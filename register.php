@@ -39,18 +39,18 @@ include("config.php");
 										<h3>LOGIN INFORMATION</h3>
 										<div>
 											<span>Password<label>*</label></span>
-											<input type="text" name="passname">
+											<input id="modlgn_passwd" type="password" name="passname" class="inputbox" size="18" autocomplete="off">
 											<span style = "color:red ; font-size: 15px;"> <?php echo $emptypass ?></span>
 										</div>
 									
 										<div>
 											<span>Confirm Password<label>*</label></span>
-											<input type="text" name="passname">
+											<input id="modlgn_passwd" type="password" name="passname" class="inputbox" size="18" autocomplete="off">
 											<span style = "color:red ; font-size: 15px;"> <?php echo $emptypass ?></span>
 										</div>
 										
 										<div class="clear"> </div>
-										<div style="margin-left:61%"><button class="button1" type="Submit" name="Submit" style = "margin-left:-40%;color:white" >Register</button></div>
+										<div style="margin-left:61%"><button class="button1" type="Submit" name="register" style = "margin-left:-40%;color:white" >Register</button></div>
 								</div>
 														
 									
@@ -108,9 +108,7 @@ include("config.php");
 					</div>
 				</div>
 				<div class="row footer_bottom">
-				    <div class="copy">
-			           <p>© 2014 Template by <a href="http://w3layouts.com" target="_blank">w3layouts</a></p>
-		            </div>
+
 					  <dl id="sample" class="dropdown">
 				        <dt><a href="#"><span>Change Region</span></a></dt>
 				        <dd>

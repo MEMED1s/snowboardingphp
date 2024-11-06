@@ -1,7 +1,7 @@
 <?php 
 						$emptyemail="";
 						$emptypass="";
-						if(isset($_POST["Submit"])){
+						if(isset($_POST["login"])||isset($_POST["register"])){
 							$emailvalue = $_POST ['emailname'];
 							$passvalue = $_POST ['passname'];
 							if(empty($emailvalue)){
@@ -16,7 +16,10 @@
 								session_start();
 								$_SESSION["emailuser"] = $emailvalue;
 								$_SESSION["passuser"] = $passvalue;
-								header("Location:index.php");	
+								if(isset($_POST["register"]))
+									header("Location:login.php");	
+								else
+									header("Location:index.php");	
 							}
 						}
 						
